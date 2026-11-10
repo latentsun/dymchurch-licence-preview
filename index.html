@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>2027 Annual Licence Agreement | Dymchurch Holiday Park</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./assets/vendor/pdf-lib.min.js"></script>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the agreement</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <img class="brand-logo" src="./assets/sellers-leisure.png" alt="Sellers Leisure">
+      <span class="header-divider" aria-hidden="true"></span>
+      <div class="park-label">Dymchurch <span>Holiday Park</span></div>
+      <span class="preview-badge">Local preview</span>
+    </div>
+  </header>
+
+  <main id="main" class="shell">
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow">2027 season</p>
+      <h1 id="title">Annual Licence Agreement</h1>
+      <p class="intro-copy">Complete and sign your holiday caravan pitch licence for the 2027 season.</p>
+      <p class="agreement-dates">Licence period <strong>1 March 2027 – 29 February 2028</strong></p>
+    </section>
+
+    <noscript><p class="notice">Enable JavaScript to use the agreement preview.</p></noscript>
+    <p class="notice"><strong>Test with dummy details.</strong> This preview creates a sample PDF on your device. The Park Rules will be added when the current copy is available.</p>
+
+    <nav class="steps" aria-label="Agreement steps">
+      <ol>
+        <li><button type="button" data-step="0" aria-current="step"><span class="step-number">1</span><span>Owner details</span></button></li>
+        <li><button type="button" data-step="1" disabled><span class="step-number">2</span><span>Read &amp; initial</span></button></li>
+        <li><button type="button" data-step="2" disabled><span class="step-number">3</span><span>Sign &amp; download</span></button></li>
+      </ol>
+    </nav>
+
+    <section class="panel" data-panel="0" aria-labelledby="details-heading">
+      <div class="panel-heading">
+        <h2 id="details-heading" tabindex="-1">Owner details</h2>
+        <p>Enter your main residential address and the details of your caravan. Fields marked <span class="required">*</span> are required.</p>
+      </div>
+
+      <form id="details-form">
+        <fieldset>
+          <legend>Contact details</legend>
+          <div class="form-grid">
+            <label>Full name <span class="required">*</span><input name="ownerName" autocomplete="name" maxlength="100" required></label>
+            <label>Email address <span class="required">*</span><input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+            <label class="wide">Main residential address <span class="required">*</span><textarea name="address" autocomplete="street-address" rows="2" maxlength="250" required></textarea></label>
+            <label>Postcode <span class="required">*</span><input name="postcode" autocomplete="postal-code" maxlength="24" required></label>
+            <label>Daytime telephone<input name="telephone" type="tel" maxlength="45"></label>
+            <label>Mobile<input name="mobile" type="tel" autocomplete="tel" maxlength="45"></label>
+            <label>Next of kin<input name="nextOfKin" maxlength="100"></label>
+            <label>Next of kin phone<input name="nextOfKinPhone" type="tel" maxlength="45"></label>
+            <label>Car registration number(s)<input name="carRegistration" maxlength="80"></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Caravan details</legend>
+          <div class="form-grid">
+            <label>Make<input name="make" maxlength="90"></label>
+            <label>Model name or type<input name="model" maxlength="90"></label>
+            <label>Length and width<input name="dimensions" placeholder="e.g. 36 ft × 12 ft" maxlength="75"></label>
+            <label>Serial number<input name="serial" maxlength="90"></label>
+            <label>Specification<select name="specification"><option value="">Select if known</option><option>EN1647</option><option>BS3632</option></select></label>
+            <label>Year of manufacture<input name="manufactureYear" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="YYYY"></label>
+            <label>Current pitch on the park<input name="pitch" maxlength="60"></label>
+            <label>Will you be the first owner?<select name="firstOwner"><option value="">Select an answer</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+            <label>Maximum sleeping capacity<input name="sleepingCapacity" type="number" inputmode="numeric" min="1" max="99"></label>
+            <label>Finance provider, if applicable<input name="financeProvider" maxlength="120"></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Licence fee</legend>
+          <p class="field-note">The total is £3,120 including VAT under either option. The agreement applies Option 1 if you leave this blank.</p>
+          <div class="choice-list">
+            <label class="choice"><input type="radio" name="payment" value="full"><span><strong>Option 1 · Pay in full</strong><small>£3,120 by 14 January 2027</small></span></label>
+            <label class="choice"><input type="radio" name="payment" value="instalments"><span><strong>Option 2 · Two instalments</strong><small>£2,000 by 14 January 2027 and £1,120 by 28 February 2027</small></span></label>
+            <label class="choice choice-plain"><input type="radio" name="payment" value="" checked><span>Leave the payment box blank</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Marketing preferences <span class="optional">Optional</span></legend>
+          <p class="field-note">Sellers Leisure can contact me about goods and services that may be of interest by:</p>
+          <div class="check-row">
+            <label class="choice"><input type="checkbox" name="marketing" value="email"> Email</label>
+            <label class="choice"><input type="checkbox" name="marketing" value="phone"> Telephone</label>
+            <label class="choice"><input type="checkbox" name="marketing" value="sms"> SMS/text message</label>
+          </div>
+        </fieldset>
+
+        <div class="actions actions-end"><button class="primary" type="submit">Read the agreement <span aria-hidden="true">→</span></button></div>
+      </form>
+    </section>
+
+    <section class="panel" data-panel="1" aria-labelledby="review-heading" hidden>
+      <div class="panel-heading review-heading">
+        <div>
+          <h2 id="review-heading" tabindex="-1">Read and initial</h2>
+          <p>Read each page and add your initials where marked.</p>
+        </div>
+        <a href="./assets/licence-2027.pdf" target="_blank" rel="noopener">Open original PDF <span aria-hidden="true">↗</span><span class="sr-only"> in a new tab</span></a>
+      </div>
+
+      <div class="reader">
+        <div class="reader-toolbar">
+          <div class="page-picker">
+            <label for="page-select">Page</label>
+            <select id="page-select" aria-label="Agreement page"></select>
+            <span>of 14</span>
+          </div>
+          <label class="zoom-picker">Zoom <select id="page-zoom"><option value="fit">Fit width</option><option value="100">100%</option><option value="150">150%</option><option value="200">200%</option></select></label>
+        </div>
+        <div id="page-viewport" class="page-viewport" role="region" aria-label="Agreement page image" tabindex="0">
+          <div id="page-sheet" class="page-sheet">
+            <img id="page-image" width="1191" height="1684" alt="" src="./assets/pages/01.webp">
+            <span id="page-initial-mark" aria-hidden="true" hidden></span>
+          </div>
+        </div>
+      </div>
+      <details id="page-transcript" class="transcript">
+        <summary>Read this page as text</summary>
+        <p id="page-text"></p>
+      </details>
+
+      <div class="reader-actions">
+        <div>
+          <p id="initial-status" class="initial-status" aria-live="polite">0 of 13 pages initialled</p>
+          <p id="page-status" class="field-note"></p>
+        </div>
+        <form id="initial-form" class="initial-form" hidden>
+          <label for="initials">Your initials</label>
+          <input id="initials" name="initials" maxlength="8" autocomplete="off" spellcheck="false" required>
+          <button id="apply-initials" class="primary" type="submit">Initial &amp; continue</button>
+        </form>
+      </div>
+      <div class="actions">
+        <button id="previous-page" type="button" class="secondary">← Previous page</button>
+        <button id="next-page" type="button" class="secondary">Next page →</button>
+        <button id="continue-to-sign" type="button" class="primary" hidden>Continue to signing →</button>
+      </div>
+    </section>
+
+    <section class="panel" data-panel="2" aria-labelledby="sign-heading" hidden>
+      <div class="panel-heading">
+        <h2 id="sign-heading" tabindex="-1">Sign the agreement</h2>
+        <p>Check your details and sign to generate a sample copy of the agreement.</p>
+      </div>
+
+      <div class="signature-grid">
+        <div class="signature-card">
+          <h3>Sellers Leisure Ltd</h3>
+          <img class="park-signature" src="./assets/park-signature.png" alt="Sample park signature, preview only">
+          <strong>Sam Sellers</strong>
+          <p class="field-note">Park representative · <span id="park-date"></span></p>
+        </div>
+        <div class="signature-card">
+          <h3>Caravan owner</h3>
+          <button id="open-signature" type="button" class="signature-trigger"><span id="signature-button-label">+ Add your signature</span><img id="owner-signature-image" alt="" hidden></button>
+          <strong id="owner-signature-name"></strong>
+          <p class="field-note">Signature date · <span id="owner-date"></span></p>
+        </div>
+      </div>
+
+      <form id="sign-form">
+        <fieldset>
+          <legend>Confirm your details</legend>
+          <div class="form-grid">
+            <label>Full name<input id="confirm-name" readonly></label>
+            <label>Email address<input id="confirm-email" type="email" readonly></label>
+          </div>
+          <p class="field-note"><button id="edit-details" type="button" class="text-button">Edit owner details</button></p>
+        </fieldset>
+
+        <label class="choice consent"><input type="checkbox" id="digital-consent" required><span id="consent-wording">I have read and agree to the licence agreement and consent to signing it electronically.</span></label>
+        <p id="export-status" class="export-status" role="status" aria-live="polite"></p>
+        <div class="actions">
+          <button id="back-to-review" type="button" class="secondary">← Review agreement</button>
+          <button id="download-button" type="submit" class="primary">Download sample PDF ↓</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Sellers Leisure Ltd · Dymchurch Holiday Park</span>
+    <a href="mailto:info@dymchurchholidaypark.com">info@dymchurchholidaypark.com</a>
+  </footer>
+
+  <dialog id="signature-dialog" aria-labelledby="signature-heading">
+    <div class="dialog-heading">
+      <div><h2 id="signature-heading">Add your signature</h2><p>Draw it or type your name.</p></div>
+      <button id="close-signature" type="button" class="icon-button" aria-label="Close signature box">×</button>
+    </div>
+    <div class="signature-modes" role="group" aria-label="Signature method">
+      <button id="choose-draw" type="button" aria-pressed="true">Draw</button>
+      <button id="choose-type" type="button" aria-pressed="false">Type</button>
+    </div>
+
+    <div id="draw-signature">
+      <canvas id="signature-pad" width="900" height="300" aria-label="Draw your signature with a mouse, pen or finger"></canvas>
+      <button id="clear-signature" class="text-button" type="button">Clear drawing</button>
+    </div>
+    <div id="type-signature" hidden>
+      <label for="signature-text">Type your name</label>
+      <input id="signature-text" autocomplete="off" maxlength="100">
+      <div id="typed-preview" class="typed-preview" aria-hidden="true"></div>
+    </div>
+
+    <p id="signature-error" class="error" role="status"></p>
+    <div class="actions actions-end">
+      <button id="cancel-signature" type="button" class="secondary">Cancel</button>
+      <button id="save-signature" type="button" class="primary">Use signature</button>
+    </div>
+  </dialog>
+</body>
+</html>
